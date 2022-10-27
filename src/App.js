@@ -9,7 +9,7 @@ export default function App() {
   React.useEffect(() => {
     WebFont.load({
       google: {
-        families: ["Roboto" ]
+        families: ["Roboto", "Droid Sans", "Chilanka"],
       },
     });
   }, []);
