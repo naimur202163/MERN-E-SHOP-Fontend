@@ -13,7 +13,7 @@ export default function Footer() {
       </div>
       <div className="midFooter">
         <h1>E-shop</h1>
-        <h1>High Quality Our Frist priority</h1>
+        <p>High Quality Our Frist priority</p>
         <p>copyrights 2021 &copy Naimur Rahman</p>
       </div>
       <div className="rightFooter">
