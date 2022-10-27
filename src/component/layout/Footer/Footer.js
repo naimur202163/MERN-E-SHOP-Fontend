@@ -18,9 +18,9 @@ export default function Footer() {
       </div>
       <div className="rightFooter">
         <h4>Follow Us</h4>
-        <a href="#">Istagram</a>
-        <a href="#">Youtube</a>
-        <a href="#">Facebook</a>
+        <a href="/#">Istagram</a>
+        <a href="/#">Youtube</a>
+        <a href="/#">Facebook</a>
       </div>
     </footer>
   );
