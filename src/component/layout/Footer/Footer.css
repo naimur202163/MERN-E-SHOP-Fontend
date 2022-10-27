@@ -32,3 +32,42 @@ footer {
   width: 60%;
   text-align: center;
 }
+
+.midFooter > h1 {
+  color: crimson;
+
+  font-size: 4vmax;
+}
+
+.midFooter > h1:hover {
+  color: rgb(180, 55, 80);
+
+  font-size: 4vmax;
+}
+
+.midFooter {
+  width: 60%;
+  margin: 1vmax auto;
+}
+
+/* righ */
+
+.rightFooter {
+  width: 20%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rightFooter h4 {
+  font-size: 1.4vmax;
+  text-decoration: underline;
+}
+
+.rightFooter > a {
+  text-decoration: none;
+  font-size: 1.3vmax;
+  color: white;
+  margin: 0.5vmax;
+}
