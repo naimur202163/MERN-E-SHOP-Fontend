@@ -1,10 +1,9 @@
 import React from "react";
 import Header from "./component/layout/Header/Header";
-import { BrowserRouter as Router,Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import WebFont from "webfontloader";
 import Footer from "./component/layout/Footer/Footer";
 import Home from "./component/Home/Home";
-
 
 export default function App() {
   React.useEffect(() => {
@@ -16,14 +15,12 @@ export default function App() {
   }, []);
   return (
     <Router>
-    <Header />
-    <Switch>
-      <Route exact path="/" component={Home} />
-     
-    
-    </Switch>
+      <Header />
+      <Switch>
+        <Route exact path="/" component={Home} />
+      </Switch>
 
-    <Footer />
-  </Router>
+      <Footer />
+    </Router>
   );
 }
