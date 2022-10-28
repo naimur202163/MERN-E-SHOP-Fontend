@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Rating } from "@material-ui/lab";
 
-const Product = ({ product }) => {
+const ProductCard = ({ product }) => {
   const options = {
-    value: product.ratings,
-    readOnly: true,
-    precision: 0.5,
+    value: 2.5,
+    color: "rgba(20, 20, 20, 01)",
+    activeColor: "tomato",
   };
   return (
     <Link className="productCard" to={product._id}>
@@ -24,4 +24,4 @@ const Product = ({ product }) => {
   );
 };
 
-export default Product;
+export default ProductCard;
