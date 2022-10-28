@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { CgMouse } from "react-icons/all";
+import { CgMouse, DiAndroid } from "react-icons/all";
 import "./Home.css";
 import Product from "./ProductCard";
 export default function Home() {
@@ -25,7 +25,17 @@ export default function Home() {
         </a>
       </div>
       <h2 className="homeHeading">Featured Products</h2>
+      <div className="container" id="container">
       <Product product={product} />
+      <Product product={product} />
+      <Product product={product} />
+      <Product product={product} />
+      <Product product={product} />
+      <Product product={product} />
+      <Product product={product} />
+      <Product product={product} />
+      </div>
+      
     </Fragment>
   );
 }
