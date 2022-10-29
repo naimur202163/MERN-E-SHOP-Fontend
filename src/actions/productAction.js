@@ -5,12 +5,16 @@ import {
   ALL_PRODUCT_SUCCESS,
   CLEAR_ERRORS,
 } from "./../constants/productConstants";
-
-export const getProduct = () => async (dispatch) => {
+export const getProduct = async (dispatch) => {
   try {
     dispatch({ type: ALL_PRODUCT_REQUEST });
-    let { data } = await axios.get("/api/v1/products");
-    dispatch({ type: ALL_PRODUCT_SUCCESS, payload: data });
+    
+    const { data } =await axios.get("/api/v1/products");
+    dispatch({
+      type: ALL_PRODUCT_SUCCESS,
+      payload: data,
+    });
+
   } catch (error) {
     dispatch({
       type: ALL_PRODUCT_FAIL,
@@ -19,10 +23,8 @@ export const getProduct = () => async (dispatch) => {
   }
 };
 
-
 // crear error
 
-
-export const clearError=()=>async(dispatch)=>{
-    dispatch({type:CLEAR_ERRORS})
-}
+export const clearError = () => async (dispatch) => {
+  dispatch({ type: CLEAR_ERRORS });
+};

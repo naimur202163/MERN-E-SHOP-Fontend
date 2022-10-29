@@ -3,9 +3,11 @@ import { CgMouse } from "react-icons/all";
 import "./Home.css";
 import Product from "./ProductCard";
 import MetaData from "../layout/MetaData";
-
+import { useDispatch } from "react-redux";
+import { getProduct } from "./../../actions/productAction";
 
 export default function Home() {
+  const dispatch = useDispatch();
 
   const product = {
     edit: false,
@@ -16,7 +18,9 @@ export default function Home() {
     _id: "naimur",
     size: window.innerWidth < 600 ? 20 : 25,
   };
-
+  React.useEffect(() => {
+    dispatch(getProduct);
+  }, [dispatch]);
   // console.log(getProduct)
   return (
     <Fragment>
