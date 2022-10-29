@@ -9,7 +9,7 @@ import { useSelector } from "react-redux";
 import Loader from "./../layout/Loader/Loader";
 import { useAlert } from "react-alert";
 
-export default function Home() {
+const Home = () => {
   const alert = useAlert();
   const dispatch = useDispatch();
   const { loading, error, products, productsCount } = useSelector(
@@ -22,7 +22,6 @@ export default function Home() {
     }
     dispatch(getProduct);
   }, [dispatch, error, alert]);
-  // console.log(getProduct)
   return (
     <Fragment>
       {loading ? (
@@ -49,4 +48,6 @@ export default function Home() {
       )}
     </Fragment>
   );
-}
+};
+
+export default Home;
