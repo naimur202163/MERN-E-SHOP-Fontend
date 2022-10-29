@@ -3,12 +3,9 @@ import { CgMouse } from "react-icons/all";
 import "./Home.css";
 import Product from "./ProductCard";
 import MetaData from "../layout/MetaData";
-import { getProduct } from "./../../actions/productAction";
-import { useSelector, useDispatch } from "react-redux";
-import { useEffect } from "react";
+
 
 export default function Home() {
-  const dispatch = useDispatch();
 
   const product = {
     edit: false,
@@ -20,9 +17,7 @@ export default function Home() {
     size: window.innerWidth < 600 ? 20 : 25,
   };
 
-  useEffect(() => {
-    dispatch(getProduct);
-  }, [dispatch]);
+  // console.log(getProduct)
   return (
     <Fragment>
       <MetaData title="Ecommerce" />
