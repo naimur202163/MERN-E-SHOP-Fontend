@@ -20,18 +20,16 @@ export default function ProductDetails({ match }) {
     <Fragment>
       <div className="productDetails">
         <div>
-          {/* <Carousel>
-            {product.images &&
-              product.images.map((item, i) => (
-                <img
-                  className="CarouselImage"
-                  key={item.url}
-                  src={item.url}
-                  alt={`${i} Slide`}
-                />
-              ))}
-          </Carousel> */}
-
+          <Carousel></Carousel>
+          {product.images &&
+            product.images.map((item, i) => (
+              <img
+                className="CarouselImage"
+                key={item.url}
+                src={item.url}
+                alt={item.i}
+              />
+            ))}
           <h2>Product Details</h2>
         </div>
       </div>
