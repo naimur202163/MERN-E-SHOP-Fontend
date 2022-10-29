@@ -6,7 +6,7 @@ import WebFont from "webfontloader";
 import React from "react";
 import Footer from "./component/layout/Footer/Footer";
 import Home from "./component/Home/Home";
-import ProductDetails from './component/Product/ProductDetails';
+import ProductDetails from "./component/Product/ProductDetails";
 function App() {
   useEffect(() => {
     WebFont.load({
