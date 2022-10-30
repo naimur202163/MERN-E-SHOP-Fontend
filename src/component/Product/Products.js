@@ -4,7 +4,7 @@ import ProductCard from "../Home/ProductCard";
 import Loader from "../layout/Loader/Loader";
 import MetaData from "../layout/MetaData";
 import { getProduct } from "./../../actions/productAction";
-
+import './Products.css'
 export default function Products() {
   const { loading, products, error } = useSelector((state) => state.products);
   const dispatch = useDispatch();
