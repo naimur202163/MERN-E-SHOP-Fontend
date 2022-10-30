@@ -1,32 +1,19 @@
-import React, { useState, Fragment } from "react";
-import MetaData from "../layout/MetaData";
-import "./Search.css";
+import React, { Fragment } from "react";
 
-const Search = ({ history }) => {
-  const [keyword, setKeyword] = useState("");
+export default function Search() {
 
-  const searchSubmitHandler = (e) => {
-    e.preventDefault();
-    if (keyword.trim()) {
-      history.push(`/products/${keyword}`);
-    } else {
-      history.push("/products");
-    }
-  };
-
+  const [keyword,setKeyWord]=useState("")
   return (
     <Fragment>
-      <MetaData title="Search A Product -- ECOMMERCE" />
-      <form className="searchBox" onSubmit={searchSubmitHandler}>
+      <form className="searchBox" >
         <input
           type="text"
-          placeholder="Search a Product ..."
-          onChange={(e) => setKeyword(e.target.value)}
+          placeholder="Search a Product"
+         
         />
-        <input type="submit" value="Search" />
+
+        <input type="submit" value="Search"/>
       </form>
     </Fragment>
   );
-};
-
-export default Search;
+}
